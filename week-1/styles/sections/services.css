@@ -1,0 +1,76 @@
+.section-3 {
+  padding: 0rem 8rem 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-3 .section-3-header {
+  display: flex;
+  justify-content: center;
+}
+.section-3 .section-3-header .section-3-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #553D67;
+  display: inline-block;
+  position: relative;
+  text-wrap: nowrap;
+}
+.section-3 .section-3-header .section-3-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 3px solid #F64C72;
+}
+@media (max-width: 768px) {
+  .section-3 .section-3-header .section-3-heading {
+    font-size: 30;
+  }
+}
+@media (max-width: 480px) {
+  .section-3 .section-3-header .section-3-heading {
+    font-size: 28px;
+  }
+}
+.section-3 .section-3-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.section-3 .section-3-cards .section-3-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  box-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.2509803922);
+  padding: 1rem;
+}
+.section-3 .section-3-cards .section-3-card .section-3-card-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #553D67;
+}
+.section-3 .section-3-cards .section-3-card .section-3-card-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(73, 92, 118, 0.6980392157);
+}
+@media (max-width: 1024px) {
+  .section-3 {
+    padding: 0rem 2re, 2rem 2rem;
+  }
+  .section-3 .section-3-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .section-3 .section-3-cards {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=services.css.map */

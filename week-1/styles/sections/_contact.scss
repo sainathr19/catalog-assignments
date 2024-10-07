@@ -1,0 +1,42 @@
+.section-7{
+    background-color: #F64C72;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0rem;
+    gap: 15px;
+    .section-7-title{
+        font-family: "Mulish", sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+    }
+    .section-7-text{
+        width: 50%;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .email-input{
+        border-radius: 5px;
+        width: 275px;
+        height: 20px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #696969;
+    }
+    @media (max-width: 1024px) {
+        gap: 25px;
+        .section-7-title{
+            text-wrap: wrap;
+            text-align: center;
+            font-size: 44px;
+        }
+        .section-7-text{
+            width: 75%;
+            font-size: 16px;
+        }
+    }
+}

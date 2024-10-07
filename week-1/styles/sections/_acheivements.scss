@@ -1,0 +1,61 @@
+.acheivements{
+    background-color: #F64C72;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 6rem 0rem 6rem 0rem;
+    position: relative;
+    top: -80px;
+    .acheivements-title{
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    .acheivements-text{
+        font-size: 18px;
+        width: 50%;
+    }
+    .acheivements-list{
+        display: grid; 
+        grid-template-columns: repeat(4,1fr);
+        width: 60%;
+        .acheivement{
+            .acheivement-value{
+                font-size: 40px;
+                font-family: 700;
+            }
+            .acheivement-tag{
+                font-size: 14px;
+                font-family: 600;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        top: -80px;
+        padding: 4rem 0rem 4rem 0rem;
+        .acheivements-title{
+            font-size: 30px;
+        }
+        .acheivements-text{
+            width: 90%;
+        }
+        .acheivements-list{
+            grid-template-columns: repeat(2,1fr);
+            width: 90%;
+            .acheivement{
+                padding: 1rem;
+                .acheivement-value{
+                    font-size: 33px;
+                }
+                .acheivement-tag{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+    }
+}

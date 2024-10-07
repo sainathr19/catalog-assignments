@@ -1,0 +1,56 @@
+@import "../abstracts/mixins";
+.section-5{
+    @include flex-column-center();
+    gap: 2rem;
+    padding: 2rem 8rem 0rem 8rem;
+    box-sizing: border-box;
+    .section-5-header{
+        .section-5-heading{
+            @include heading-style();                             
+        }
+    }  
+    .section-5-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2em;
+        .section-5-card{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0px 10px 15px 0px #655A5A40;
+            .section-5-card-content{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 1rem 2rem;
+                .section-5-card-title{
+                    color: #553D67;
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-family: "Mulish", sans-serif;
+                }
+                .section-5-card-info{
+                    color: #553D67;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: "Mulish", sans-serif;
+                }
+                .section-5-card-text{
+                    font-size: 16px;
+                    color: #697694;
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 5rem 5rem 2rem 5rem;
+        .section-5-cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 768px) {
+        .section-5-cards{
+             grid-template-columns: 1fr;
+        }
+    }      
+}

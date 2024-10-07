@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    .footer-right{
+        display: flex;
+        align-items: baseline;
+        a{
+            padding: 0px 1rem;
+            text-decoration: none;
+            img{
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}

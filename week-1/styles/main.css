@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Mulish:wght@200;400;700&display=swap");
+
+body {
+  margin: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin: 0;
+}
+body .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0rem 4rem 0rem;
+}
+body header .header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+body header .header-top .nav-logo {
+  height: 100px;
+  width: 100px;
+}
+body header .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+body header .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+body header .nav-toggle {
+  display: none;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+body header .nav-toggle img {
+  height: 50px;
+  width: 50px;
+}
+@media (max-width: 768px) {
+  body header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  body header .header-top .nav-logo {
+    height: 50px;
+    width: 50px;
+  }
+  body header .nav-name {
+    display: none;
+  }
+  body header .nav-links {
+    display: none;
+  }
+  body header .nav-toggle {
+    display: block;
+  }
+}
+body main .hero {
+  background-image: url("../assets/hero_background.webp");
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 4rem;
+}
+body main .hero .hero-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  width: 40%;
+}
+body main .hero .hero-text {
+  font-size: 18px;
+  font-weight: 500;
+  width: 40%;
+}
+body main .hero .hero-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 55px;
+}
+body main .hero .hero-footer .email-input {
+  border: none;
+  outline: none;
+  padding: 0rem 1.75rem;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+body main .hero .hero-footer .hero-button {
+  color: white;
+  background-color: #f64c72;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  body main .hero {
+    padding: 4rem 1rem;
+  }
+  body main .hero .hero-title {
+    font-size: 45px;
+    width: 80%;
+  }
+  body main .hero .hero-text {
+    font-size: 18px;
+    width: 70%;
+  }
+  body main .hero .hero-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  body main .hero .hero-footer .email-input {
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+  }
+  body main .hero .hero-footer .hero-button {
+    padding: 1rem 2rem;
+    font-size: 16px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+body main .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+body main .about-us .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0px 10px 15px 0px rgba(126, 97, 97, 0.2509803922);
+  padding: 0rem 2rem 0rem 2rem;
+  width: 75%;
+  position: relative;
+  top: -50px;
+  background-color: white;
+}
+body main .about-us .wrapper .about-header .about-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #553d67;
+  display: inline-block;
+  position: relative;
+  text-wrap: nowrap;
+  padding: 1rem;
+}
+body main .about-us .wrapper .about-header .about-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 3px solid #f64c72;
+}
+@media (max-width: 768px) {
+  body main .about-us .wrapper .about-header .about-heading {
+    font-size: 30;
+  }
+}
+@media (max-width: 480px) {
+  body main .about-us .wrapper .about-header .about-heading {
+    font-size: 28px;
+  }
+}
+body main .about-us .wrapper .about-content {
+  text-align: center;
+  color: #6d7d8b;
+  width: 100%;
+}
+body main .about-us .wrapper .about-content .about-text {
+  margin: 1rem;
+}
+body main .about-us .wrapper .timeline {
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  body main .about-us {
+    padding: 0rem;
+  }
+  body main .about-us .wrapper {
+    width: 85%;
+  }
+  body main .about-us .about-content {
+    width: 100%;
+  }
+  body main .about-us .about-content .about-text {
+    margin: 1rem 0rem;
+  }
+}
+@media (max-width: 768px) {
+  body main .about-us {
+    flex-direction: column;
+  }
+  body main .about-us .timeline {
+    display: none;
+  }
+}
+body main .about-us-cards {
+  display: flex;
+  gap: 15px;
+  padding: 2rem 10rem;
+  position: relative;
+  z-index: 3;
+}
+body main .about-us-cards .about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 10px 15px 0px rgba(6, 0, 0, 0.2509803922);
+  padding: 2rem;
+  gap: 15px;
+  background-color: white;
+}
+body main .about-us-cards .about-card .about-card-title {
+  font-size: 26px;
+  font-weight: 400;
+  color: #553d67;
+}
+body main .about-us-cards .about-card .about-card-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (max-width: 1024px) {
+  body main .about-us-cards {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+body main .acheivements {
+  background-color: #f64c72;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 6rem 0rem 6rem 0rem;
+  position: relative;
+  top: -80px;
+}
+body main .acheivements .acheivements-title {
+  font-size: 40px;
+  font-weight: 700px;
+}
+body main .acheivements .acheivements-text {
+  font-size: 18px;
+  width: 50%;
+}
+body main .acheivements .acheivements-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
+}
+body main .acheivements .acheivements-list .acheivement .acheivement-value {
+  font-size: 40px;
+  font-family: 700;
+}
+body main .acheivements .acheivements-list .acheivement .acheivement-tag {
+  font-size: 14px;
+  font-family: 600;
+}
+@media (max-width: 1024px) {
+  body main .acheivements {
+    top: -80px;
+    padding: 4rem 0rem 4rem 0rem;
+  }
+  body main .acheivements .acheivements-title {
+    font-size: 30px;
+  }
+  body main .acheivements .acheivements-text {
+    width: 90%;
+  }
+  body main .acheivements .acheivements-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+  body main .acheivements .acheivements-list .acheivement {
+    padding: 1rem;
+  }
+  body main .acheivements .acheivements-list .acheivement .acheivement-value {
+    font-size: 33px;
+  }
+  body main .acheivements .acheivements-list .acheivement .acheivement-tag {
+    font-size: 12px;
+  }
+}
+body main .section-3 {
+  padding: 0rem 8rem 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main .section-3 .section-3-header {
+  display: flex;
+  justify-content: center;
+}
+body main .section-3 .section-3-header .section-3-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #553d67;
+  display: inline-block;
+  position: relative;
+  text-wrap: nowrap;
+}
+body main .section-3 .section-3-header .section-3-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 3px solid #f64c72;
+}
+@media (max-width: 768px) {
+  body main .section-3 .section-3-header .section-3-heading {
+    font-size: 30;
+  }
+}
+@media (max-width: 480px) {
+  body main .section-3 .section-3-header .section-3-heading {
+    font-size: 28px;
+  }
+}
+body main .section-3 .section-3-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+body main .section-3 .section-3-cards .section-3-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  box-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.2509803922);
+  padding: 1rem;
+}
+body main .section-3 .section-3-cards .section-3-card .section-3-card-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #553d67;
+}
+body main .section-3 .section-3-cards .section-3-card .section-3-card-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(73, 92, 118, 0.6980392157);
+}
+@media (max-width: 1024px) {
+  body main .section-3 {
+    padding: 0rem 2re, 2rem 2rem;
+  }
+  body main .section-3 .section-3-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  body main .section-3 .section-3-cards {
+    grid-template-columns: 1fr;
+  }
+}
+body main .section-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Mulish", sans-serif;
+}
+body main .section-4 .section-4-image {
+  height: 600px;
+  width: 100%;
+}
+body main .section-4 .section-4-right {
+  height: 100%;
+  background-color: #f64c72;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0rem 2rem;
+  font-weight: 600;
+}
+body main .section-4 .section-4-right .section-4-title {
+  font-size: 40px;
+}
+body main .section-4 .section-4-right .section-4-text {
+  font-size: 19px;
+  font-weight: 500;
+}
+body main .section-4 .section-4-right .section-4-button {
+  font-family: inherit;
+  background-color: inherit;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  body main .section-4 {
+    grid-template-columns: 1fr;
+  }
+  body main .section-4 .section-4-image {
+    display: none;
+  }
+  body main .section-4 .section-4-right {
+    padding: 3rem 1rem;
+  }
+  body main .section-4 .section-4-right .section-4-title {
+    font-size: 30px;
+  }
+}
+body main .section-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 8rem 0rem 8rem;
+  box-sizing: border-box;
+}
+body main .section-5 .section-5-header .section-5-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #553d67;
+  display: inline-block;
+  position: relative;
+  text-wrap: nowrap;
+}
+body main .section-5 .section-5-header .section-5-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 3px solid #f64c72;
+}
+@media (max-width: 768px) {
+  body main .section-5 .section-5-header .section-5-heading {
+    font-size: 30;
+  }
+}
+@media (max-width: 480px) {
+  body main .section-5 .section-5-header .section-5-heading {
+    font-size: 28px;
+  }
+}
+body main .section-5 .section-5-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+body main .section-5 .section-5-cards .section-5-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.2509803922);
+}
+body main .section-5 .section-5-cards .section-5-card .section-5-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1rem 2rem;
+}
+body
+  main
+  .section-5
+  .section-5-cards
+  .section-5-card
+  .section-5-card-content
+  .section-5-card-title {
+  color: #553d67;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+}
+body
+  main
+  .section-5
+  .section-5-cards
+  .section-5-card
+  .section-5-card-content
+  .section-5-card-info {
+  color: #553d67;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+body
+  main
+  .section-5
+  .section-5-cards
+  .section-5-card
+  .section-5-card-content
+  .section-5-card-text {
+  font-size: 16px;
+  color: #697694;
+}
+@media (max-width: 1024px) {
+  body main .section-5 {
+    padding: 5rem 5rem 2rem 5rem;
+  }
+  body main .section-5 .section-5-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  body main .section-5 .section-5-cards {
+    grid-template-columns: 1fr;
+  }
+}
+body main .section-6 {
+  padding: 2rem 8rem 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body main .section-6 .section-6-header {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #553d67;
+  display: inline-block;
+  position: relative;
+  text-wrap: nowrap;
+}
+body main .section-6 .section-6-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 3px solid #f64c72;
+}
+@media (max-width: 768px) {
+  body main .section-6 .section-6-header {
+    font-size: 30;
+  }
+}
+@media (max-width: 480px) {
+  body main .section-6 .section-6-header {
+    font-size: 28px;
+  }
+}
+body main .section-6 .section-6-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+body main .section-6 .section-6-cards .section-6-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  box-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.2509803922);
+  padding: 2rem;
+}
+body main .section-6 .section-6-cards .section-6-card .section-6-card-img {
+  width: 150px;
+}
+body main .section-6 .section-6-cards .section-6-card .section-6-card-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6d7d8b;
+  padding: 2rem 0rem;
+}
+body main .section-6 .section-6-cards .section-6-card .section-6-card-footer {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  height: -moz-max-content;
+  height: max-content;
+}
+body
+  main
+  .section-6
+  .section-6-cards
+  .section-6-card
+  .section-6-card-footer
+  .section-6-footer-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+body
+  main
+  .section-6
+  .section-6-cards
+  .section-6-card
+  .section-6-card-footer
+  .section-6-footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body
+  main
+  .section-6
+  .section-6-cards
+  .section-6-card
+  .section-6-card-footer
+  .section-6-footer-content
+  .section-6-card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  body main .section-6 {
+    padding: 3rem;
+  }
+  body main .section-6 .section-6-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .section-6 .section-6-cards .section-6-card .section-6-card-footer {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  body main .section-6 {
+    padding: 0.5rem;
+  }
+  body main .section-6 .section-6-cards {
+    grid-template-columns: 1fr;
+  }
+}
+body main .section-7 {
+  background-color: #f64c72;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0rem;
+  gap: 15px;
+}
+body main .section-7 .section-7-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+body main .section-7 .section-7-text {
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+body main .section-7 .email-input {
+  border-radius: 5px;
+  width: 275px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #696969;
+}
+@media (max-width: 1024px) {
+  body main .section-7 {
+    gap: 25px;
+  }
+  body main .section-7 .section-7-title {
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 44px;
+  }
+  body main .section-7 .section-7-text {
+    width: 75%;
+    font-size: 16px;
+  }
+}
+body footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+}
+body footer .footer-right {
+  display: flex;
+  align-items: baseline;
+}
+body footer .footer-right a {
+  padding: 0px 1rem;
+  text-decoration: none;
+}
+body footer .footer-right a img {
+  height: 30px;
+  width: 30px;
+}
+@media (max-width: 1024px) {
+  body footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+} /*# sourceMappingURL=main.css.map */
