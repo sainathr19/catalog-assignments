@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Mulish:wght@200;400;700&display=swap");
-
 body {
   margin: 0;
 }
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
-body p {
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
 }
 body .visually-hidden {
@@ -125,7 +117,7 @@ body main .hero .hero-footer .email-input {
 }
 body main .hero .hero-footer .hero-button {
   color: white;
-  background-color: #f64c72;
+  background-color: #F64C72;
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
@@ -184,7 +176,7 @@ body main .about-us .wrapper .about-header .about-heading {
   font-size: 40px;
   font-weight: 500;
   line-height: 70px;
-  color: #553d67;
+  color: #553D67;
   display: inline-block;
   position: relative;
   text-wrap: nowrap;
@@ -197,7 +189,7 @@ body main .about-us .wrapper .about-header .about-heading::after {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  border-bottom: 3px solid #f64c72;
+  border-bottom: 3px solid #F64C72;
 }
 @media (max-width: 768px) {
   body main .about-us .wrapper .about-header .about-heading {
@@ -211,7 +203,7 @@ body main .about-us .wrapper .about-header .about-heading::after {
 }
 body main .about-us .wrapper .about-content {
   text-align: center;
-  color: #6d7d8b;
+  color: #6D7D8B;
   width: 100%;
 }
 body main .about-us .wrapper .about-content .about-text {
@@ -219,7 +211,7 @@ body main .about-us .wrapper .about-content .about-text {
 }
 body main .about-us .wrapper .timeline {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   overflow: hidden;
   width: 100%;
 }
@@ -265,7 +257,7 @@ body main .about-us-cards .about-card {
 body main .about-us-cards .about-card .about-card-title {
   font-size: 26px;
   font-weight: 400;
-  color: #553d67;
+  color: #553D67;
 }
 body main .about-us-cards .about-card .about-card-text {
   font-size: 18px;
@@ -278,7 +270,7 @@ body main .about-us-cards .about-card .about-card-text {
   }
 }
 body main .acheivements {
-  background-color: #f64c72;
+  background-color: #F64C72;
   color: white;
   font-family: "Mulish", sans-serif;
   text-align: center;
@@ -351,7 +343,7 @@ body main .section-3 .section-3-header .section-3-heading {
   font-size: 40px;
   font-weight: 500;
   line-height: 70px;
-  color: #553d67;
+  color: #553D67;
   display: inline-block;
   position: relative;
   text-wrap: nowrap;
@@ -363,7 +355,7 @@ body main .section-3 .section-3-header .section-3-heading::after {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  border-bottom: 3px solid #f64c72;
+  border-bottom: 3px solid #F64C72;
 }
 @media (max-width: 768px) {
   body main .section-3 .section-3-header .section-3-heading {
@@ -392,7 +384,7 @@ body main .section-3 .section-3-cards .section-3-card {
 body main .section-3 .section-3-cards .section-3-card .section-3-card-title {
   font-size: 22px;
   font-weight: 400;
-  color: #553d67;
+  color: #553D67;
 }
 body main .section-3 .section-3-cards .section-3-card .section-3-card-text {
   font-size: 18px;
@@ -408,6 +400,9 @@ body main .section-3 .section-3-cards .section-3-card .section-3-card-text {
   }
 }
 @media (max-width: 768px) {
+  body main .section-3 {
+    padding: 2rem;
+  }
   body main .section-3 .section-3-cards {
     grid-template-columns: 1fr;
   }
@@ -423,7 +418,7 @@ body main .section-4 .section-4-image {
 }
 body main .section-4 .section-4-right {
   height: 100%;
-  background-color: #f64c72;
+  background-color: #F64C72;
   color: white;
   display: flex;
   flex-direction: column;
@@ -479,7 +474,7 @@ body main .section-5 .section-5-header .section-5-heading {
   font-size: 40px;
   font-weight: 500;
   line-height: 70px;
-  color: #553d67;
+  color: #553D67;
   display: inline-block;
   position: relative;
   text-wrap: nowrap;
@@ -491,7 +486,7 @@ body main .section-5 .section-5-header .section-5-heading::after {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  border-bottom: 3px solid #f64c72;
+  border-bottom: 3px solid #F64C72;
 }
 @media (max-width: 768px) {
   body main .section-5 .section-5-header .section-5-heading {
@@ -520,37 +515,19 @@ body main .section-5 .section-5-cards .section-5-card .section-5-card-content {
   gap: 5px;
   padding: 1rem 2rem;
 }
-body
-  main
-  .section-5
-  .section-5-cards
-  .section-5-card
-  .section-5-card-content
-  .section-5-card-title {
-  color: #553d67;
+body main .section-5 .section-5-cards .section-5-card .section-5-card-content .section-5-card-title {
+  color: #553D67;
   font-size: 24px;
   font-weight: 400;
   font-family: "Mulish", sans-serif;
 }
-body
-  main
-  .section-5
-  .section-5-cards
-  .section-5-card
-  .section-5-card-content
-  .section-5-card-info {
-  color: #553d67;
+body main .section-5 .section-5-cards .section-5-card .section-5-card-content .section-5-card-info {
+  color: #553D67;
   font-size: 14px;
   font-weight: 600;
   font-family: "Mulish", sans-serif;
 }
-body
-  main
-  .section-5
-  .section-5-cards
-  .section-5-card
-  .section-5-card-content
-  .section-5-card-text {
+body main .section-5 .section-5-cards .section-5-card .section-5-card-content .section-5-card-text {
   font-size: 16px;
   color: #697694;
 }
@@ -580,7 +557,7 @@ body main .section-6 .section-6-header {
   font-size: 40px;
   font-weight: 500;
   line-height: 70px;
-  color: #553d67;
+  color: #553D67;
   display: inline-block;
   position: relative;
   text-wrap: nowrap;
@@ -592,7 +569,7 @@ body main .section-6 .section-6-header::after {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  border-bottom: 3px solid #f64c72;
+  border-bottom: 3px solid #F64C72;
 }
 @media (max-width: 768px) {
   body main .section-6 .section-6-header {
@@ -624,7 +601,7 @@ body main .section-6 .section-6-cards .section-6-card .section-6-card-img {
 body main .section-6 .section-6-cards .section-6-card .section-6-card-text {
   font-size: 18px;
   font-weight: 400;
-  color: #6d7d8b;
+  color: #6D7D8B;
   padding: 2rem 0rem;
 }
 body main .section-6 .section-6-cards .section-6-card .section-6-card-footer {
@@ -634,39 +611,20 @@ body main .section-6 .section-6-cards .section-6-card .section-6-card-footer {
   height: -moz-max-content;
   height: max-content;
 }
-body
-  main
-  .section-6
-  .section-6-cards
-  .section-6-card
-  .section-6-card-footer
-  .section-6-footer-img {
+body main .section-6 .section-6-cards .section-6-card .section-6-card-footer .section-6-footer-img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   overflow: hidden;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
-body
-  main
-  .section-6
-  .section-6-cards
-  .section-6-card
-  .section-6-card-footer
-  .section-6-footer-content {
+body main .section-6 .section-6-cards .section-6-card .section-6-card-footer .section-6-footer-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-body
-  main
-  .section-6
-  .section-6-cards
-  .section-6-card
-  .section-6-card-footer
-  .section-6-footer-content
-  .section-6-card-title {
+body main .section-6 .section-6-cards .section-6-card .section-6-card-footer .section-6-footer-content .section-6-card-title {
   font-size: 16px;
   font-weight: 600;
 }
@@ -690,7 +648,7 @@ body
   }
 }
 body main .section-7 {
-  background-color: #f64c72;
+  background-color: #F64C72;
   color: white;
   display: flex;
   flex-direction: column;
@@ -757,4 +715,4 @@ body footer .footer-right a img {
     justify-content: center;
     gap: 20px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
