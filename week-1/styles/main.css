@@ -468,6 +468,7 @@ body main .section-5 {
   gap: 2rem;
   padding: 2rem 8rem 0rem 8rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body main .section-5 .section-5-header .section-5-heading {
   font-family: "Mulish", sans-serif;

@@ -2,16 +2,6 @@
 body{
     font-family: "Open Sans", sans-serif;
     @import "./layout/header";
-    main{
-        @import "./sections/hero";
-        @import "./sections/about_us";
-        @import "./sections/about_cards";
-        @import "./sections/acheivements";
-        @import "./sections/services";
-        @import "./sections/mission";
-        @import "./sections/team";
-        @import "./sections/testimonals";
-        @import "./sections/contact";
-    }
+    @import "./layout/main";
     @import "./layout/footer";
 }
