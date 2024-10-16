@@ -2,57 +2,81 @@
 .section-5{
     @include flex-column-center();
     gap: 2rem;
-    padding: 2rem 8rem 0rem 8rem;
+    padding: 2rem;
     box-sizing: border-box;
     overflow: hidden;
     .section-5-header{
         .section-5-heading{
-            @include heading-style();                             
+            @include heading-style();
+            font-size: 36px;                      
         }
     }  
+    .section-5-cards::-webkit-scrollbar {
+        display: none;  /* Chrome, Safari, Opera */
+    }
     .section-5-cards{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2em;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        max-width: 100%;
+        padding: 0rem 1rem 5rem 2rem;
+        overflow: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
         .section-5-card{
             display: flex;
             flex-direction: column;
             gap: 8px;
             box-shadow: 0px 10px 15px 0px #655A5A40;
+            height: 450px;
+            width: 337px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            .section-5-card-img{
+                height: 248px;
+                width: 337px;
+            }
             .section-5-card-content{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 gap: 5px;
-                padding: 1rem 2rem;
+                height: 100%;
+                padding: 1rem;
                 .section-5-card-title{
                     color: #553D67;
                     font-size: 24px;
-                    font-weight: 400;
+                    font-weight: 600;
+                    line-height: 30px;
                     font-family: "Mulish", sans-serif;
                 }
                 .section-5-card-info{
                     color: #553D67;
                     font-size: 14px;
                     font-weight: 600;
+                    line-height: 21px;
                     font-family: "Mulish", sans-serif;
                 }
                 .section-5-card-text{
                     font-size: 16px;
+                    font-weight: 400;
+                    line-height: 27px;
                     color: #697694;
+                    font-family: "Open Sans", sans-serif;
                 }
             }
         }
     }
     @media (max-width: 1024px) {
-        padding: 7rem 5rem 2rem 5rem;
         .section-5-cards{
-            grid-template-columns: repeat(2, 1fr);
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: 0rem;
         }
     }
     @media (max-width: 768px) {
-        // padding: 5rem 2rem;
-        .section-5-cards{
-             grid-template-columns: 1fr;
-        }
+
     }      
 }

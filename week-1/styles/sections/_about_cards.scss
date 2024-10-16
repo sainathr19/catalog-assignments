@@ -1,31 +1,41 @@
 .about-us-cards{
     display: flex;
-    gap: 15px;
-    padding: 2rem 10rem;
+    justify-content: center;
+    gap: 1.25rem;
     position: relative;
     z-index: 3;
     .about-card{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
         box-shadow: 0px 10px 15px 0px #06000040;
-        padding: 2rem;
-        gap:15px;
+        box-sizing: border-box;
+        gap:10px;
         background-color: white;
+        height: 297px;
+        width: 367px;
+        flex-shrink:1;
+        border-radius:5px ;
         .about-card-title{
             font-size: 26px;
             font-weight: 400;
+            line-height: 32px;
             color: #553D67;
+            font-family: "Mulish", sans-serif;
         }
         .about-card-text{
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 400;
+            line-height: 30px;
+            color: #495C76B2;
+            font-family: "Open Sans", sans-serif;
         }
     }
     @media (max-width: 1024px) {
         flex-direction: column;
-        padding:2rem ;
+        align-items: center;
     }
     @media (max-width: 768px) {
     }
