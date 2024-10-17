@@ -36,13 +36,16 @@
     @media (max-width: 1024px) {
         gap: 25px;
         height: 396px;
+        padding-bottom: 2rem;
         .section-7-title{
             text-wrap: wrap;
             text-align: center;
-            font-size: 38px;
+            font-size: 37px;
+            line-height: 45px;
+            width: 90%;
         }
         .section-7-text{
-            width: 75%;
+            width: 90%;
             font-size: 16px;
         }
     }

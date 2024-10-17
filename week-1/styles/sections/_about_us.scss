@@ -48,13 +48,16 @@
     }
 
     @media (max-width: 900px) {
+        .about-us{
+            padding-bottom: 1rem;
+        }
         .wrapper{
             width: 100%;
-        }
-        .about-content {
-            width: 100%;
-            .about-text {
-                margin: 1rem 0rem;
+            .about-content {
+                width: 90%;
+                .about-text {
+                    margin: 1rem 0rem;
+                }
             }
         }
     }
