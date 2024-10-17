@@ -36,6 +36,12 @@
     @media (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
+        .about-us-cards{
+             .about-card{
+                height: 252px;
+                width: 250px;
+             }
+        }
     }
     @media (max-width: 768px) {
     }

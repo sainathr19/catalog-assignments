@@ -135,15 +135,16 @@ body main .hero .hero-footer .hero-button {
 }
 @media (max-width: 1024px) {
   body main .hero {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
   }
   body main .hero .hero-title {
-    font-size: 45px;
-    width: 80%;
+    font-size: 40px;
+    width: 100%;
   }
   body main .hero .hero-text {
-    font-size: 18px;
-    width: 70%;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
   }
   body main .hero .hero-footer {
     flex-direction: column;
@@ -152,7 +153,8 @@ body main .hero .hero-footer .hero-button {
     margin-top: 20px;
   }
   body main .hero .hero-footer .email-input {
-    padding: 0.75rem 2rem;
+    height: 48px;
+    width: 302px;
     font-size: 16px;
   }
   body main .hero .hero-footer .hero-button {
@@ -232,13 +234,16 @@ body main .about-us .wrapper .timeline {
   height: 119px;
 }
 @media (max-width: 900px) {
+  body main .about-us .about-us {
+    padding-bottom: 1rem;
+  }
   body main .about-us .wrapper {
     width: 100%;
   }
-  body main .about-us .about-content {
-    width: 100%;
+  body main .about-us .wrapper .about-content {
+    width: 90%;
   }
-  body main .about-us .about-content .about-text {
+  body main .about-us .wrapper .about-content .about-text {
     margin: 1rem 0rem;
   }
 }
@@ -290,6 +295,10 @@ body main .about-us-cards .about-card .about-card-text {
   body main .about-us-cards {
     flex-direction: column;
     align-items: center;
+  }
+  body main .about-us-cards .about-us-cards .about-card {
+    height: 252px;
+    width: 250px;
   }
 }
 body main .acheivements {
@@ -358,7 +367,7 @@ body main .acheivements .acheivements-list .acheivement .acheivement-tag {
   }
 }
 body main .section-3 {
-  padding: 0rem 0rem 8rem 0rem;
+  padding: 0rem 0rem 6rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -413,7 +422,7 @@ body main .section-3 .section-3-cards .section-3-card {
   padding: 2rem 1rem;
   box-sizing: border-box;
   height: 375px;
-  width: 390px;
+  width: 375px;
   margin: 0 auto;
   border-radius: 4px;
   overflow: hidden;
@@ -572,7 +581,7 @@ body main .section-5 .section-5-cards {
   flex-wrap: nowrap;
   gap: 2rem;
   max-width: 100%;
-  padding: 0rem 1rem 5rem 2rem;
+  padding: 0rem 1rem 1rem 2rem;
   overflow: scroll;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -647,7 +656,6 @@ body main .section-6 .section-6-header {
   display: inline-block;
   position: relative;
   text-wrap: nowrap;
-  font-size: 36px;
 }
 body main .section-6 .section-6-header::after {
   content: "";
@@ -728,6 +736,13 @@ body main .section-6 .section-6-cards .section-6-card .section-6-card-footer .se
   font-weight: 600;
 }
 @media (max-width: 1024px) {
+  body main .section-6 .section-6-header {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-wrap: wrap;
+    text-align: center;
+  }
   body main .section-6 .section-6-cards {
     padding-left: 5rem;
   }
@@ -777,14 +792,17 @@ body main .section-7 .email-input {
   body main .section-7 {
     gap: 25px;
     height: 396px;
+    padding-bottom: 2rem;
   }
   body main .section-7 .section-7-title {
     text-wrap: wrap;
     text-align: center;
-    font-size: 38px;
+    font-size: 37px;
+    line-height: 45px;
+    width: 90%;
   }
   body main .section-7 .section-7-text {
-    width: 75%;
+    width: 90%;
     font-size: 16px;
   }
 }
